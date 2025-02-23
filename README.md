@@ -7,7 +7,7 @@
 Irfan Yafi Pranoto 13122077
 
 
-ITB FTMD, Mechanical Engineer
+ITB FTMD, Mechanical Engineering
 
 # Research Equipment
 
