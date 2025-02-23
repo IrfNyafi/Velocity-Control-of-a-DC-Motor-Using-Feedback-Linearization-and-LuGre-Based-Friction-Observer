@@ -7,7 +7,7 @@
 Irfan Yafi Pranoto 13122077
 
 
-ITB FTMD, Mechanical Engineer
+ITB FMAE, Mechanical Engineering
 
 # Research Equipment
 
@@ -68,13 +68,18 @@ define the error dynamics
 
 we design the control input law $u\left(t\right)$ using simple proportional integral controller. The writer choose the control input to be
 
- $$ u\left(t\right)={\dot{\omega } }_d \left(t\right)+K_p e\left(t\right)+K_i \int_{t_0 }^{\tau } e\left(\tau \right)d\tau  $$ 
+```math
+ u\left(t\right)={\dot{\omega } }_d \left(t\right)+K_p e\left(t\right)+K_i \int_{t_0 }^{\tau } e\left(\tau \right)d\tau
+```
 
 substitute the proposed control law to the error dynamics, we will get
 
- $$ \dot{e} \left(t\right)={\dot{\omega } }_d \left(t\right)-\dot{\omega} \left(t\right)={\dot{\omega } }_d \left(t\right)-{\dot{\omega } }_d \left(t\right)-K_p e\left(t\right)-K_i \int_{t_0 }^{\tau } e\left(\tau \right)d\tau  $$ 
+```math
+ \dot{e} \left(t\right)={\dot{\omega } }_d \left(t\right)-\dot{\omega} \left(t\right)={\dot{\omega } }_d \left(t\right)-{\dot{\omega } }_d \left(t\right)-K_p e\left(t\right)-K_i \int_{t_0 }^{\tau } e\left(\tau \right)d\tau
+```
 
- $$ \dot{e} \left(t\right)+K_p e\left(t\right)+K_i \int_{t_0 }^{\tau } e\left(\tau \right)d\tau =0 $$ 
+
+$$ \dot{e} \left(t\right)+K_p e\left(t\right)+K_i \int_{t_0 }^{\tau } e\left(\tau \right)d\tau =0 $$
 
 similar dynamics
 
@@ -95,12 +100,19 @@ We conclude the control law as the following:
 u(t) = \dot{\omega}_d(t) + K_p e(t) + K_i \int_{t_0}^{\tau} e(\tau) d\tau
 = \rho(t) \left( a_1 |\omega(t)| + a_2 \right) - \beta \omega(t) - \frac{\sigma_0}{J} \hat{z} - \frac{\sigma_1}{J} \frac{d\hat{z}}{dt} + \widehat{f}(t)
 ```
+<<<<<<< HEAD
 
 ```math
 \rho(t) = \frac{\dot{\omega}_d(t) + K_p e(t) + K_i \int_{t_0}^{\tau} e(\tau) d\tau + \beta \omega(t) + \frac{\sigma_0}{J} \hat{z} + \frac{\sigma_1}{J} \frac{d\hat{z}}{dt} - \widehat{f}(t)}{\left( a_1 |\omega(t)| + a_2 \right)}
 ```
 
 
+=======
+
+```math
+\rho(t) = \frac{\dot{\omega}_d(t) + K_p e(t) + K_i \int_{t_0}^{\tau} e(\tau) d\tau + \beta \omega(t) + \frac{\sigma_0}{J} \hat{z} + \frac{\sigma_1}{J} \frac{d\hat{z}}{dt} - \widehat{f}(t)}{\left( a_1 |\omega(t)| + a_2 \right)}
+```
+>>>>>>> 87b6c59e65b2ca5988b987ed88d8c7f151d99387
 
 the values of $\hat{z}$ , $\frac{d\hat{z} }{\mathrm{dt}}$ , and $\widehat{f} \left(t\right)$ are obtained from the nonlinear Luenberger observer
 
