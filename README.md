@@ -91,9 +91,16 @@ thus, we get $K_p =-\left(P_1 +P_2 \right)$ and $K_i =P_1 P_2$ .
 
 We conclude the control law as the following:
 
- $$ u\left(t\right)={\dot{\omega } }_d \left(t\right)+K_p e\left(t\right)+K_i \int_{t_0 }^{\tau } e\left(\tau \right)d\tau =\rho \left(t\right)\left(a_1 |\omega \left(t\right)|+a_2 \right)-\beta \omega \left(t\right)-\frac{\sigma_0 }{J}\hat{z} -\frac{\sigma_1 }{J}\frac{d\hat{z} }{\mathrm{dt}}+\widehat{f} \left(t\right) $$ 
+```math
+u(t) = \dot{\omega}_d(t) + K_p e(t) + K_i \int_{t_0}^{\tau} e(\tau) d\tau
+= \rho(t) \left( a_1 |\omega(t)| + a_2 \right) - \beta \omega(t) - \frac{\sigma_0}{J} \hat{z} - \frac{\sigma_1}{J} \frac{d\hat{z}}{dt} + \widehat{f}(t)
+```
 
- $$ \rho \left(t\right)=\frac{{\dot{\omega } }_d \left(t\right)+K_p e\left(t\right)+K_i \int_{t_0 }^{\tau } e\left(\tau \right)d\tau +\beta \omega \left(t\right)+\frac{\sigma_0 }{J}\hat{z} +\frac{\sigma_1 }{J}\frac{d\hat{z} }{\mathrm{dt}}-\widehat{f} \left(t\right)}{\left(a_1 |\omega \left(t\right)|+a_2 \right)} $$ 
+```math
+\rho(t) = \frac{\dot{\omega}_d(t) + K_p e(t) + K_i \int_{t_0}^{\tau} e(\tau) d\tau + \beta \omega(t) + \frac{\sigma_0}{J} \hat{z} + \frac{\sigma_1}{J} \frac{d\hat{z}}{dt} - \widehat{f}(t)}{\left( a_1 |\omega(t)| + a_2 \right)}
+```
+
+
 
 the values of $\hat{z}$ , $\frac{d\hat{z} }{\mathrm{dt}}$ , and $\widehat{f} \left(t\right)$ are obtained from the nonlinear Luenberger observer
 
